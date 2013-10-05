@@ -3,7 +3,7 @@ require 'pathname'
 require 'uri' 
  
 module Sprockets 
-  class UrlRewriter < Processor 
+  class UrlRewriter < Sprockets::Processor
     def evaluate(context, locals) 
       # FIXME: Accessing logical_path instance variable directly instead of
       # using public method, since the public method incorrectly chops paths
